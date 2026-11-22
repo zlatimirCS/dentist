@@ -123,10 +123,17 @@ p {
   animation-delay: 0.48s;
 }
 
+/* Shared light-blue wash so sticky menu + hero read as one gradient */
+.site-header {
+  background: #dcecf2;
+}
+
+.site-header-nav {
+  background: #dcecf2;
+}
+
 .hero-shell {
-  background:
-    radial-gradient(ellipse 70% 55% at 85% 10%, rgba(13, 124, 143, 0.1), transparent 55%),
-    linear-gradient(180deg, #eaf3f7 0%, #f7fafc 55%, #ffffff 100%);
+  background: linear-gradient(180deg, #dcecf2 0%, #f4f8fa 40%, #ffffff 100%);
 }
 
 .reveal {

@@ -26,7 +26,7 @@ const slides = [
   },
 ];
 
-const INTERVAL_MS = 5000;
+const INTERVAL_MS = 10000;
 
 export function HeroSlider() {
   const [active, setActive] = useState(0);
@@ -49,7 +49,7 @@ export function HeroSlider() {
           width={1600}
           height={1200}
           priority={index === 0}
-          className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ease-in-out ${
+          className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-[2000ms] ease-[cubic-bezier(0.4,0,0.2,1)] ${
             index === active ? "opacity-100" : "opacity-0"
           }`}
         />

@@ -6,7 +6,7 @@ function base(props: IconProps) {
   return {
     fill: "none",
     stroke: "currentColor",
-    strokeWidth: 1.85,
+    strokeWidth: 1.25,
     strokeLinecap: "round" as const,
     strokeLinejoin: "round" as const,
     ...props,

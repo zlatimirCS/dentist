@@ -23,7 +23,7 @@ export function Header() {
   }, [open]);
 
   return (
-    <header className="sticky top-0 z-50">
+    <header className="site-header sticky top-0 z-50">
       <div className="bg-navy text-white">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-2 text-[12px] tracking-wide md:px-8">
           <p className="flex min-w-0 items-center gap-2 text-white/85">
@@ -40,7 +40,7 @@ export function Header() {
         </div>
       </div>
 
-      <div className="border-b border-line/70 bg-surface/95 backdrop-blur-md">
+      <div className="site-header-nav">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3.5 md:px-8 md:py-4">
           <Link href="#home" className="group flex items-center gap-2.5">
             <span className="flex size-11 items-center justify-center rounded-full bg-ice text-teal transition group-hover:bg-teal group-hover:text-white">

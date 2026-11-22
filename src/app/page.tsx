@@ -131,17 +131,17 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main>
-        {/* Hero */}
-        <section id="home" className="hero-shell overflow-hidden">
-          <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 pt-10 pb-8 md:px-8 md:pt-16 md:pb-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14">
+      {/* #home fills the rest of the first viewport under the sticky menu */}
+      <section
+        id="home"
+        className="hero-shell flex min-h-[calc(100svh-6.75rem)] flex-col justify-center overflow-hidden"
+      >
+          <div className="mx-auto grid w-full max-w-6xl items-center gap-8 px-5 pt-6 pb-4 md:gap-10 md:px-8 md:pt-8 md:pb-5 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14">
             <div>
               <p className="animate-fade-up text-xs font-semibold tracking-[0.22em] text-teal uppercase">
                 Dobrodošli u Bright Smiles
               </p>
-              <h1
-                className="font-display animate-fade-up delay-1 mt-4 max-w-xl text-[2.35rem] leading-[1.08] font-semibold text-navy md:text-5xl lg:text-[3.35rem]"
-              >
+              <h1 className="font-display animate-fade-up delay-1 mt-4 max-w-xl text-[2.35rem] leading-[1.08] font-semibold text-navy md:text-5xl lg:text-[3.35rem]">
                 Zdrav i blistav osmeh počinje brigom koja vam pruža sigurnost.
               </h1>
               <p className="animate-fade-up delay-2 mt-5 max-w-lg text-base leading-relaxed text-muted md:text-[1.05rem]">
@@ -166,31 +166,30 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="animate-soft-scale relative">
+            <div className="animate-soft-scale relative w-full max-w-xl justify-self-center lg:max-w-none lg:justify-self-stretch">
               <HeroSlider />
             </div>
           </div>
 
-          <div className="bg-surface/80 backdrop-blur-sm">
-            <div className="mx-auto grid max-w-6xl grid-cols-2 md:grid-cols-4">
+          <div className="mt-4 bg-surface/80 backdrop-blur-sm md:mt-6">
+            <div className="mx-auto grid max-w-6xl grid-cols-2 px-5 md:grid-cols-4 md:px-8">
               {heroFeatures.map((item, index) => {
                 const Icon = item.icon;
                 return (
                   <div
                     key={item.title}
-                    className={`animate-fade-up flex items-center gap-3 bg-surface px-5 py-5 md:px-7 delay-${index + 1}`}
+                    className={`animate-fade-up flex items-center gap-3 bg-surface px-5 py-4 md:px-7 md:py-5 delay-${index + 1}`}
                   >
-                    <span className="flex size-11 shrink-0 items-center justify-center rounded-full bg-ice text-teal">
-                      <Icon className="size-6" />
-                    </span>
+                    <Icon className="size-9 shrink-0 text-teal" />
                     <p className="text-sm font-medium text-navy">{item.title}</p>
                   </div>
                 );
               })}
             </div>
           </div>
-        </section>
+      </section>
 
+      <main>
         {/* Services */}
         <section id="services" className="bg-surface py-16 md:py-24">
           <div className="mx-auto max-w-6xl px-5 md:px-8">
@@ -218,10 +217,8 @@ export default function Home() {
                 return (
                   <Reveal key={service.title} delay={index * 60}>
                     <article className="group h-full">
-                      <span className="flex size-14 items-center justify-center rounded-full bg-ice text-teal transition group-hover:bg-teal group-hover:text-white">
-                        <Icon className="size-7" />
-                      </span>
-                      <h3 className="font-display mt-5 text-xl font-semibold text-navy">
+                      <Icon className="size-11 text-teal transition group-hover:text-teal-dark" />
+                      <h3 className="font-display mt-4 text-xl font-semibold text-navy">
                         {service.title}
                       </h3>
                       <p className="mt-3 text-sm leading-relaxed text-muted">
@@ -308,9 +305,7 @@ export default function Home() {
                 return (
                   <Reveal key={item.title} delay={index * 70}>
                     <div className="h-full">
-                      <span className="flex size-12 items-center justify-center rounded-full bg-surface text-teal shadow-sm">
-                        <Icon className="size-6" />
-                      </span>
+                      <Icon className="size-10 text-teal" />
                       <h3 className="mt-4 text-base font-semibold text-navy">
                         {item.title}
                       </h3>
