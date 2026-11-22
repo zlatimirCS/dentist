@@ -49,6 +49,17 @@ body {
 .font-lora {
   font-family: "Lora", var(--font-lora), Georgia, serif !important;
   letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
 }
 
 ::selection {

@@ -158,14 +158,14 @@ export default function Home() {
                   className="inline-flex items-center justify-center gap-2 rounded-md bg-teal px-5 py-3.5 text-sm font-semibold text-white transition hover:bg-teal-dark"
                 >
                   Zakažite pregled
-                  <ArrowIcon className="size-4" />
+                  <ArrowIcon className="size-5" />
                 </a>
                 <a
                   href="#services"
                   className="inline-flex items-center justify-center gap-2 rounded-md border border-line bg-surface px-5 py-3.5 text-sm font-semibold text-navy transition hover:border-teal/40 hover:text-teal"
                 >
                   Pogledajte usluge
-                  <ArrowIcon className="size-4" />
+                  <ArrowIcon className="size-5" />
                 </a>
               </div>
             </div>
@@ -193,10 +193,10 @@ export default function Home() {
                     key={item.title}
                     className={`animate-fade-up flex items-center gap-3 bg-surface px-5 py-5 md:px-7 delay-${index + 1}`}
                   >
-                    <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-ice text-teal">
-                      <Icon className="size-5" />
+                    <span className="flex size-11 shrink-0 items-center justify-center rounded-full bg-ice text-teal">
+                      <Icon className="size-6" />
                     </span>
-                    <p className="text-sm font-medium text-muted">{item.title}</p>
+                    <p className="text-sm font-medium text-navy">{item.title}</p>
                   </div>
                 );
               })}
@@ -219,8 +219,8 @@ export default function Home() {
                 </div>
                 <p className="max-w-xl text-muted md:justify-self-end md:text-right">
                   Od preventivnih pregleda do restaurativnih i estetskih tretmana,
-                  Bright Smiles nudi kompletnu porodičnu stomatologiju na jednom
-                  mestu.
+                  Bright Smiles nudi kompletnu porodičnu stomatologiju na
+                  jednom&nbsp;mestu.
                 </p>
               </div>
             </Reveal>
@@ -231,8 +231,8 @@ export default function Home() {
                 return (
                   <Reveal key={service.title} delay={index * 60}>
                     <article className="group h-full">
-                      <span className="flex size-12 items-center justify-center rounded-full bg-ice text-teal transition group-hover:bg-teal group-hover:text-white">
-                        <Icon className="size-6" />
+                      <span className="flex size-14 items-center justify-center rounded-full bg-ice text-teal transition group-hover:bg-teal group-hover:text-white">
+                        <Icon className="size-7" />
                       </span>
                       <h3 className="font-lora mt-5 text-xl font-semibold text-navy">
                         {service.title}
@@ -245,7 +245,7 @@ export default function Home() {
                         className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-teal transition group-hover:gap-2.5"
                       >
                         Saznajte više
-                        <ArrowIcon className="size-4" />
+                        <ArrowIcon className="size-5" />
                       </a>
                     </article>
                   </Reveal>
@@ -276,7 +276,7 @@ export default function Home() {
                   O nama
                 </p>
                 <h2 className="font-lora mt-3 text-3xl leading-tight font-semibold text-navy md:text-4xl">
-                  Vaš osmeh nam je na prvom mestu.
+                  Vaš osmeh nam je na prvom&nbsp;mestu.
                 </h2>
                 <p className="mt-5 text-muted leading-relaxed">
                   U Bright Smiles Dental Care pružamo personalizovanu,
@@ -286,7 +286,7 @@ export default function Home() {
                 <ul className="mt-7 space-y-3.5">
                   {aboutPoints.map((point) => (
                     <li key={point} className="flex items-start gap-3 text-sm text-muted">
-                      <CheckIcon className="mt-0.5 size-5 shrink-0 text-teal" />
+                      <CheckIcon className="mt-0.5 size-6 shrink-0 text-teal" />
                       <span>{point}</span>
                     </li>
                   ))}
@@ -296,7 +296,7 @@ export default function Home() {
                   className="mt-8 inline-flex items-center gap-2 rounded-md border border-teal/30 bg-surface px-5 py-3 text-sm font-semibold text-teal transition hover:border-teal hover:bg-teal hover:text-white"
                 >
                   Više o nama
-                  <ArrowIcon className="size-4" />
+                  <ArrowIcon className="size-5" />
                 </a>
               </div>
             </Reveal>
@@ -321,8 +321,8 @@ export default function Home() {
                 return (
                   <Reveal key={item.title} delay={index * 70}>
                     <div className="h-full">
-                      <span className="flex size-11 items-center justify-center rounded-full bg-surface text-teal shadow-sm">
-                        <Icon className="size-5" />
+                      <span className="flex size-12 items-center justify-center rounded-full bg-surface text-teal shadow-sm">
+                        <Icon className="size-6" />
                       </span>
                       <h3 className="mt-4 text-base font-semibold text-navy">
                         {item.title}
@@ -356,7 +356,7 @@ export default function Home() {
                   <figure className="flex h-full flex-col rounded-2xl bg-ice-soft p-6 md:p-7">
                     <div className="flex gap-1 text-star" aria-label="Ocena 5 zvezdica">
                       {Array.from({ length: 5 }).map((_, star) => (
-                        <StarIcon key={star} className="size-4" />
+                        <StarIcon key={star} className="size-5" />
                       ))}
                     </div>
                     <blockquote className="mt-4 flex-1 text-[0.95rem] leading-relaxed text-foreground/85 italic">
@@ -390,7 +390,7 @@ export default function Home() {
                   className="mt-7 inline-flex items-center gap-2 rounded-md bg-surface px-5 py-3.5 text-sm font-semibold text-teal transition hover:bg-ice"
                 >
                   Zakažite pregled
-                  <ArrowIcon className="size-4" />
+                  <ArrowIcon className="size-5" />
                 </a>
               </div>
             </Reveal>
@@ -401,18 +401,18 @@ export default function Home() {
                   href="tel:+11234567890"
                   className="flex items-center gap-3 md:justify-end"
                 >
-                  <PhoneIcon className="size-5 opacity-90" />
+                  <PhoneIcon className="size-6 opacity-90" />
                   <span className="text-lg font-medium">(123) 456-7890</span>
                 </a>
                 <p className="flex items-center gap-3 text-white/85 md:justify-end">
-                  <PinIcon className="size-5 opacity-90" />
+                  <PinIcon className="size-6 opacity-90" />
                   <span>1234 Dental Way, Suite 100</span>
                 </p>
                 <a
                   href="mailto:info@brightsmilesdental.com"
                   className="flex items-center gap-3 text-white/85 md:justify-end"
                 >
-                  <MailIcon className="size-5 opacity-90" />
+                  <MailIcon className="size-6 opacity-90" />
                   <span>info@brightsmilesdental.com</span>
                 </a>
               </div>
@@ -425,8 +425,8 @@ export default function Home() {
         <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 md:grid-cols-2 md:px-8 lg:grid-cols-4">
           <div>
             <div className="flex items-center gap-2.5">
-              <span className="flex size-10 items-center justify-center rounded-full bg-white/10 text-white">
-                <ToothIcon className="size-5" />
+              <span className="flex size-11 items-center justify-center rounded-full bg-white/10 text-white">
+                <ToothIcon className="size-6" />
               </span>
               <div>
                 <p className="font-lora text-sm font-semibold tracking-[0.08em] uppercase">
@@ -479,19 +479,19 @@ export default function Home() {
             </h3>
             <ul className="mt-4 space-y-3 text-sm text-white/70">
               <li className="flex gap-3">
-                <PinIcon className="mt-0.5 size-4 shrink-0" />
+                <PinIcon className="mt-0.5 size-5 shrink-0" />
                 1234 Dental Way, Suite 100
               </li>
               <li className="flex gap-3">
-                <PhoneIcon className="mt-0.5 size-4 shrink-0" />
+                <PhoneIcon className="mt-0.5 size-5 shrink-0" />
                 (123) 456-7890
               </li>
               <li className="flex gap-3">
-                <MailIcon className="mt-0.5 size-4 shrink-0" />
+                <MailIcon className="mt-0.5 size-5 shrink-0" />
                 info@brightsmilesdental.com
               </li>
               <li className="flex gap-3">
-                <ClockIcon className="mt-0.5 size-4 shrink-0" />
+                <ClockIcon className="mt-0.5 size-5 shrink-0" />
                 Pon–Pet 8–17h · Sub 9–14h
               </li>
             </ul>

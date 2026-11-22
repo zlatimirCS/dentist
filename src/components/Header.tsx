@@ -27,14 +27,14 @@ export function Header() {
       <div className="bg-navy text-white">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-2 text-[12px] tracking-wide md:px-8">
           <p className="flex min-w-0 items-center gap-2 text-white/85">
-            <PinIcon className="size-3.5 shrink-0 opacity-80" />
+            <PinIcon className="size-4 shrink-0 opacity-80" />
             <span className="truncate">1234 Dental Way, Suite 100 · Pon–Pet 8–17h</span>
           </p>
           <a
             href="tel:+11234567890"
             className="flex shrink-0 items-center gap-2 text-white/90 transition hover:text-white"
           >
-            <PhoneIcon className="size-3.5" />
+            <PhoneIcon className="size-4" />
             (123) 456-7890
           </a>
         </div>
@@ -43,8 +43,8 @@ export function Header() {
       <div className="border-b border-line/70 bg-surface/95 backdrop-blur-md">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3.5 md:px-8 md:py-4">
           <Link href="#home" className="group flex items-center gap-2.5">
-            <span className="flex size-10 items-center justify-center rounded-full bg-ice text-teal transition group-hover:bg-teal group-hover:text-white">
-              <ToothIcon className="size-5" />
+            <span className="flex size-11 items-center justify-center rounded-full bg-ice text-teal transition group-hover:bg-teal group-hover:text-white">
+              <ToothIcon className="size-6" />
             </span>
             <span className="leading-tight">
               <span className="font-lora block text-[15px] font-semibold tracking-[0.04em] text-navy uppercase md:text-base">
@@ -74,7 +74,7 @@ export function Header() {
               className="hidden items-center gap-2 rounded-md bg-teal px-4 py-2.5 text-sm font-medium text-white transition hover:bg-teal-dark sm:inline-flex"
             >
               Zakažite pregled
-              <ArrowIcon className="size-4" />
+              <ArrowIcon className="size-5" />
             </a>
             <button
               type="button"
@@ -84,7 +84,7 @@ export function Header() {
               aria-label={open ? "Zatvori meni" : "Otvori meni"}
               onClick={() => setOpen((value) => !value)}
             >
-              {open ? <CloseIcon className="size-5" /> : <MenuIcon className="size-5" />}
+              {open ? <CloseIcon className="size-6" /> : <MenuIcon className="size-6" />}
             </button>
           </div>
         </div>
@@ -112,7 +112,7 @@ export function Header() {
               onClick={() => setOpen(false)}
             >
               Zakažite pregled
-              <ArrowIcon className="size-4" />
+              <ArrowIcon className="size-5" />
             </a>
           </nav>
         </div>
