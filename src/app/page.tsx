@@ -95,11 +95,6 @@ const whyItems = [
     description: "Termini koji se uklapaju u vaš ritam života.",
     icon: CalendarIcon,
   },
-  {
-    title: "Poverenje i briga",
-    description: "Odnosi izgrađeni na iskrenosti i zdravim osmesima.",
-    icon: ShieldIcon,
-  },
 ];
 
 const testimonials = [
@@ -171,7 +166,7 @@ export default function Home() {
             </div>
 
             <div className="animate-soft-scale relative">
-              <div className="hero-media overflow-hidden rounded-[1.4rem] shadow-[0_24px_60px_rgba(6,37,58,0.16)] md:rounded-[1.75rem]">
+              <div className="hero-media overflow-hidden rounded-[1.4rem] md:rounded-[1.75rem]">
                 <Image
                   src="/images/hero.jpg"
                   alt="Pacijent se smeši tokom nežnog stomatološkog pregleda"
@@ -315,7 +310,7 @@ export default function Home() {
               </h2>
             </Reveal>
 
-            <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
+            <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
               {whyItems.map((item, index) => {
                 const Icon = item.icon;
                 return (
