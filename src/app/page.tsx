@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Header } from "@/components/Header";
+import { HeroSlider } from "@/components/HeroSlider";
 import { Reveal } from "@/components/Reveal";
 import {
   ArrowIcon,
@@ -166,16 +167,7 @@ export default function Home() {
             </div>
 
             <div className="animate-soft-scale relative">
-              <div className="hero-media overflow-hidden rounded-[1.4rem] md:rounded-[1.75rem]">
-                <Image
-                  src="/images/hero.jpg"
-                  alt="Pacijent se smeši tokom nežnog stomatološkog pregleda"
-                  width={1600}
-                  height={1200}
-                  priority
-                  className="aspect-4/3 h-full w-full object-cover"
-                />
-              </div>
+              <HeroSlider />
             </div>
           </div>
 
