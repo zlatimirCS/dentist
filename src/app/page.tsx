@@ -244,13 +244,15 @@ export default function Home() {
           <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 md:grid-cols-2 md:gap-14 md:px-8">
             <Reveal>
               <div className="overflow-hidden rounded-3xl shadow-[0_20px_50px_rgba(6,37,58,0.12)]">
-                <Image
-                  src="/images/team.jpg"
-                  alt="Stomatološki tim Bright Smiles u ordinaciji"
-                  width={1400}
-                  height={936}
-                  className="aspect-5/4 w-full object-cover"
-                />
+                <div className="gentle-pan">
+                  <Image
+                    src="/images/team.jpg"
+                    alt="Stomatološki tim Bright Smiles u ordinaciji"
+                    width={1400}
+                    height={936}
+                    className="aspect-5/4 w-full scale-[1.14] object-cover"
+                  />
+                </div>
               </div>
             </Reveal>
 
@@ -269,8 +271,11 @@ export default function Home() {
                 </p>
                 <ul className="mt-7 space-y-3.5">
                   {aboutPoints.map((point) => (
-                    <li key={point} className="flex items-start gap-3 text-sm text-muted">
-                      <CheckIcon className="mt-0.5 size-6 shrink-0 text-teal" />
+                    <li
+                      key={point}
+                      className="grid grid-cols-[1.5rem_1fr] items-center gap-x-3 text-sm leading-6 text-muted"
+                    >
+                      <CheckIcon className="size-6 text-teal" />
                       <span>{point}</span>
                     </li>
                   ))}

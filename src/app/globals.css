@@ -136,6 +136,30 @@ p {
   background: linear-gradient(180deg, #dcecf2 0%, #f4f8fa 40%, #ffffff 100%);
 }
 
+@keyframes gentle-pan {
+  0%,
+  100% {
+    transform: translateX(-4%);
+  }
+  50% {
+    transform: translateX(4%);
+  }
+}
+
+.gentle-pan {
+  width: 100%;
+  height: 100%;
+  animation: gentle-pan 16s ease-in-out infinite;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gentle-pan {
+    animation: none;
+    transform: none;
+  }
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(20px);
