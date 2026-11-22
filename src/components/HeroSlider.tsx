@@ -54,23 +54,6 @@ export function HeroSlider() {
           }`}
         />
       ))}
-
-      <div className="absolute bottom-4 left-1/2 z-10 flex -translate-x-1/2 gap-2">
-        {slides.map((slide, index) => (
-          <button
-            key={slide.src}
-            type="button"
-            aria-label={`Prikaži sliku ${index + 1}`}
-            aria-current={index === active}
-            onClick={() => setActive(index)}
-            className={`h-2 rounded-full transition-all ${
-              index === active
-                ? "w-6 bg-white"
-                : "w-2 bg-white/55 hover:bg-white/80"
-            }`}
-          />
-        ))}
-      </div>
     </div>
   );
 }

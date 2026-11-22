@@ -136,7 +136,7 @@ export default function Home() {
         id="home"
         className="hero-shell flex min-h-[calc(100svh-6.75rem)] flex-col justify-center overflow-hidden"
       >
-          <div className="mx-auto grid w-full max-w-6xl items-center gap-8 px-5 pt-6 pb-4 md:gap-10 md:px-8 md:pt-8 md:pb-5 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14">
+          <div className="mx-auto grid w-full max-w-6xl items-center gap-8 px-5 pt-6 pb-2 md:gap-10 md:px-8 md:pt-8 md:pb-2 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14">
             <div>
               <p className="animate-fade-up text-xs font-semibold tracking-[0.22em] text-teal uppercase">
                 Dobrodošli u Bright Smiles
@@ -171,14 +171,14 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-4 bg-surface/80 backdrop-blur-sm md:mt-6">
+          <div className="mt-6 md:mt-8">
             <div className="mx-auto grid max-w-6xl grid-cols-2 px-5 md:grid-cols-4 md:px-8">
               {heroFeatures.map((item, index) => {
                 const Icon = item.icon;
                 return (
                   <div
                     key={item.title}
-                    className={`animate-fade-up flex items-center gap-3 bg-surface px-5 py-4 md:px-7 md:py-5 delay-${index + 1}`}
+                    className={`animate-fade-up flex items-center gap-3 px-5 py-3.5 md:px-7 md:py-4 delay-${index + 1}`}
                   >
                     <Icon className="size-9 shrink-0 text-teal" />
                     <p className="text-sm font-medium text-navy">{item.title}</p>
