@@ -47,7 +47,7 @@ export function Header() {
               <ToothIcon className="size-5" />
             </span>
             <span className="leading-tight">
-              <span className="block font-display text-[15px] font-semibold tracking-[0.04em] text-navy uppercase md:text-base">
+              <span className="font-lora block text-[15px] font-semibold tracking-[0.04em] text-navy uppercase md:text-base">
                 Bright Smiles
               </span>
               <span className="block text-[10px] tracking-[0.22em] text-muted uppercase">

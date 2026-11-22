@@ -143,7 +143,9 @@ export default function Home() {
               <p className="animate-fade-up text-xs font-semibold tracking-[0.22em] text-teal uppercase">
                 Dobrodošli u Bright Smiles
               </p>
-              <h1 className="animate-fade-up delay-1 mt-4 max-w-xl font-display text-[2.35rem] leading-[1.08] font-semibold text-navy md:text-5xl lg:text-[3.35rem]">
+              <h1
+                className="font-lora animate-fade-up delay-1 mt-4 max-w-xl text-[2.35rem] leading-[1.08] font-semibold text-navy md:text-5xl lg:text-[3.35rem]"
+              >
                 Zdrav i blistav osmeh počinje brigom koja vam pruža sigurnost.
               </h1>
               <p className="animate-fade-up delay-2 mt-5 max-w-lg text-base leading-relaxed text-muted md:text-[1.05rem]">
@@ -211,7 +213,7 @@ export default function Home() {
                   <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
                     Naše usluge
                   </p>
-                  <h2 className="mt-3 max-w-md font-display text-3xl leading-tight font-semibold text-navy md:text-4xl">
+                  <h2 className="font-lora mt-3 max-w-md text-3xl leading-tight font-semibold text-navy md:text-4xl">
                     Sveobuhvatna nega za zdrav osmeh.
                   </h2>
                 </div>
@@ -232,7 +234,7 @@ export default function Home() {
                       <span className="flex size-12 items-center justify-center rounded-full bg-ice text-teal transition group-hover:bg-teal group-hover:text-white">
                         <Icon className="size-6" />
                       </span>
-                      <h3 className="mt-5 font-display text-xl font-semibold text-navy">
+                      <h3 className="font-lora mt-5 text-xl font-semibold text-navy">
                         {service.title}
                       </h3>
                       <p className="mt-3 text-sm leading-relaxed text-muted">
@@ -273,7 +275,7 @@ export default function Home() {
                 <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
                   O nama
                 </p>
-                <h2 className="mt-3 font-display text-3xl leading-tight font-semibold text-navy md:text-4xl">
+                <h2 className="font-lora mt-3 text-3xl leading-tight font-semibold text-navy md:text-4xl">
                   Vaš osmeh nam je na prvom mestu.
                 </h2>
                 <p className="mt-5 text-muted leading-relaxed">
@@ -308,7 +310,7 @@ export default function Home() {
               <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
                 Zašto baš mi
               </p>
-              <h2 className="mt-3 max-w-xl font-display text-3xl leading-tight font-semibold text-navy md:text-4xl">
+              <h2 className="font-lora mt-3 max-w-xl text-3xl leading-tight font-semibold text-navy md:text-4xl">
                 Pažljiva nega. U svakom koraku.
               </h2>
             </Reveal>
@@ -343,7 +345,7 @@ export default function Home() {
               <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
                 Zadovoljni pacijenti
               </p>
-              <h2 className="mt-3 max-w-xl font-display text-3xl leading-tight font-semibold text-navy md:text-4xl">
+              <h2 className="font-lora mt-3 max-w-xl text-3xl leading-tight font-semibold text-navy md:text-4xl">
                 Poverenje stotina srećnih osmeha.
               </h2>
             </Reveal>
@@ -376,7 +378,7 @@ export default function Home() {
           <div className="mx-auto flex max-w-6xl flex-col gap-8 px-5 py-14 md:flex-row md:items-center md:justify-between md:px-8 md:py-16">
             <Reveal>
               <div className="max-w-xl">
-                <h2 className="font-display text-3xl leading-tight font-semibold text-white md:text-4xl">
+                <h2 className="font-lora text-3xl leading-tight font-semibold text-white md:text-4xl">
                   Spremni za zdraviji osmeh?
                 </h2>
                 <p className="mt-3 text-white/85">
@@ -427,7 +429,7 @@ export default function Home() {
                 <ToothIcon className="size-5" />
               </span>
               <div>
-                <p className="font-display text-sm font-semibold tracking-[0.08em] uppercase">
+                <p className="font-lora text-sm font-semibold tracking-[0.08em] uppercase">
                   Bright Smiles
                 </p>
                 <p className="text-[10px] tracking-[0.2em] text-white/65 uppercase">

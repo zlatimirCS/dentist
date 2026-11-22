@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&display=swap");
 @import "tailwindcss";
 
 :root {
@@ -28,8 +29,6 @@
   --color-ice-soft: var(--ice-soft);
   --color-line: var(--line);
   --color-star: var(--star);
-  --font-sans: var(--font-manrope);
-  --font-display: var(--font-fraunces);
 }
 
 * {
@@ -43,15 +42,12 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-manrope), sans-serif;
   text-rendering: optimizeLegibility;
 }
 
-h1,
-h2,
-h3,
-.font-display {
-  font-family: var(--font-fraunces), Georgia, serif;
+/* Replaces Fraunces on all display headings / brand titles */
+.font-lora {
+  font-family: "Lora", var(--font-lora), Georgia, serif !important;
   letter-spacing: -0.02em;
 }
 
