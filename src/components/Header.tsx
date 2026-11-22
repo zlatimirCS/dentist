@@ -5,11 +5,11 @@ import { useEffect, useState } from "react";
 import { ArrowIcon, CloseIcon, MenuIcon, PhoneIcon, PinIcon, ToothIcon } from "./Icons";
 
 const navLinks = [
-  { href: "#home", label: "Home" },
-  { href: "#about", label: "About us" },
-  { href: "#services", label: "Services" },
-  { href: "#reviews", label: "Reviews" },
-  { href: "#contact", label: "Contact" },
+  { href: "#home", label: "Početna" },
+  { href: "#about", label: "O nama" },
+  { href: "#services", label: "Usluge" },
+  { href: "#reviews", label: "Utisci" },
+  { href: "#contact", label: "Kontakt" },
 ];
 
 export function Header() {
@@ -28,7 +28,7 @@ export function Header() {
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-2 text-[12px] tracking-wide md:px-8">
           <p className="flex min-w-0 items-center gap-2 text-white/85">
             <PinIcon className="size-3.5 shrink-0 opacity-80" />
-            <span className="truncate">1234 Dental Way, Suite 100 · Mon–Fri 8AM–5PM</span>
+            <span className="truncate">1234 Dental Way, Suite 100 · Pon–Pet 8–17h</span>
           </p>
           <a
             href="tel:+11234567890"
@@ -51,12 +51,12 @@ export function Header() {
                 Bright Smiles
               </span>
               <span className="block text-[10px] tracking-[0.22em] text-muted uppercase">
-                Dental Care
+                Stomatološka nega
               </span>
             </span>
           </Link>
 
-          <nav className="hidden items-center gap-7 lg:flex" aria-label="Primary">
+          <nav className="hidden items-center gap-7 lg:flex" aria-label="Glavna navigacija">
             {navLinks.map((link) => (
               <a
                 key={link.href}
@@ -73,7 +73,7 @@ export function Header() {
               href="#contact"
               className="hidden items-center gap-2 rounded-md bg-teal px-4 py-2.5 text-sm font-medium text-white transition hover:bg-teal-dark sm:inline-flex"
             >
-              Book an appointment
+              Zakažite pregled
               <ArrowIcon className="size-4" />
             </a>
             <button
@@ -81,7 +81,7 @@ export function Header() {
               className="inline-flex size-10 items-center justify-center rounded-md border border-line text-navy lg:hidden"
               aria-expanded={open}
               aria-controls="mobile-nav"
-              aria-label={open ? "Close menu" : "Open menu"}
+              aria-label={open ? "Zatvori meni" : "Otvori meni"}
               onClick={() => setOpen((value) => !value)}
             >
               {open ? <CloseIcon className="size-5" /> : <MenuIcon className="size-5" />}
@@ -95,7 +95,7 @@ export function Header() {
           id="mobile-nav"
           className="border-b border-line bg-surface lg:hidden"
         >
-          <nav className="mx-auto flex max-w-6xl flex-col gap-1 px-5 py-4" aria-label="Mobile">
+          <nav className="mx-auto flex max-w-6xl flex-col gap-1 px-5 py-4" aria-label="Mobilna navigacija">
             {navLinks.map((link) => (
               <a
                 key={link.href}
@@ -111,7 +111,7 @@ export function Header() {
               className="mt-2 inline-flex items-center justify-center gap-2 rounded-md bg-teal px-4 py-3 text-sm font-medium text-white"
               onClick={() => setOpen(false)}
             >
-              Book an appointment
+              Zakažite pregled
               <ArrowIcon className="size-4" />
             </a>
           </nav>

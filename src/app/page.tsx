@@ -23,81 +23,81 @@ import {
 
 const services = [
   {
-    title: "General Dentistry",
+    title: "Opšta stomatologija",
     description:
-      "Routine checkups, cleanings, fillings and more for lasting oral health.",
+      "Redovni pregledi, čišćenje zuba, plombe i druge usluge za dugotrajno oralno zdravlje.",
     icon: ToothIcon,
   },
   {
-    title: "Cosmetic Dentistry",
+    title: "Estetska stomatologija",
     description:
-      "From whitening to veneers, we help transform the smile you show the world.",
+      "Od beljenja do keramičkih faseta — pomažemo vam da osvojite osmeh koji želite da pokažete svetu.",
     icon: SparkleToothIcon,
   },
   {
-    title: "Dental Implants",
+    title: "Dentalni implanti",
     description:
-      "Durable, natural-looking solutions for missing teeth that feel like your own.",
+      "Trajna i prirodno izgledajuća rešenja za nedostajuće zube, koja se osećaju kao vaši.",
     icon: ImplantIcon,
   },
   {
-    title: "Orthodontics",
+    title: "Ortodoncija",
     description:
-      "Braces and clear aligners to straighten teeth and improve your bite.",
+      "Fiksne proteze i providne alinjere za ravnije zube i bolji zagrižaj.",
     icon: OrthoIcon,
   },
   {
-    title: "Preventive Care",
+    title: "Preventivna nega",
     description:
-      "Protective treatments designed to keep your smile bright for years ahead.",
+      "Zaštitni tretmani koji pomažu da vam osmeh ostane zdrav i sjajan godinama unapred.",
     icon: ShieldIcon,
   },
   {
-    title: "Emergency Dentistry",
+    title: "Hitna stomatološka pomoć",
     description:
-      "Prompt, professional care when unexpected dental pain or injury strikes.",
+      "Brza i stručna pomoć kada se jave neočekivani bolovi ili povrede zuba.",
     icon: ClockIcon,
   },
 ];
 
 const heroFeatures = [
-  { title: "Trusted clinic", icon: HospitalIcon },
-  { title: "Specialized doctors", icon: DoctorIcon },
-  { title: "Modern equipment", icon: EquipmentIcon },
-  { title: "Healthy solutions", icon: HeartCareIcon },
+  { title: "Pouzdana ordinacija", icon: HospitalIcon },
+  { title: "Specijalizovani lekari", icon: DoctorIcon },
+  { title: "Moderna oprema", icon: EquipmentIcon },
+  { title: "Zdrava rešenja", icon: HeartCareIcon },
 ];
 
 const aboutPoints = [
-  "Experienced and caring dental team",
-  "State-of-the-art technology",
-  "Comprehensive range of dental services",
-  "Flexible and convenient appointment times",
+  "Iskusni i pažljivi stomatološki tim",
+  "Najsavremenija tehnologija",
+  "Širok spektar stomatoloških usluga",
+  "Fleksibilni i pogodni termini",
 ];
 
 const whyItems = [
   {
-    title: "Patient-centered care",
-    description: "Every visit is tailored around your comfort and goals.",
+    title: "Nega usmerena na pacijenta",
+    description: "Svaka poseta je prilagođena vašoj udobnosti i ciljevima.",
     icon: HeartCareIcon,
   },
   {
-    title: "Cutting-edge technology",
-    description: "Advanced tools for precise, gentle treatment.",
+    title: "Savremena tehnologija",
+    description: "Napredni instrumenti za precizan i nežan tretman.",
     icon: EquipmentIcon,
   },
   {
-    title: "Skilled professionals",
-    description: "Experienced dentists focused on lasting results.",
+    title: "Stručni stomatolozi",
+    description: "Iskusni lekari usmereni na dugoročne rezultate.",
     icon: DoctorIcon,
   },
   {
-    title: "Flexible scheduling",
-    description: "Convenient appointment times that fit your life.",
+    title: "Fleksibilno zakazivanje",
+    description: "Termini koji se uklapaju u vaš ritam života.",
     icon: CalendarIcon,
   },
   {
-    title: "Trusted care",
-    description: "Relationships built on honesty and happy smiles.",
+    title: "Poverenje i briga",
+    description: "Odnosi izgrađeni na iskrenosti i zdravim osmesima.",
     icon: ShieldIcon,
   },
 ];
@@ -105,22 +105,30 @@ const whyItems = [
 const testimonials = [
   {
     quote:
-      "The team is amazing! I felt comfortable from the moment I walked in. My teeth have never felt better.",
+      "Tim je sjajan! Od prvog trenutka sam se osećala opušteno. Zubi mi nikada nisu bili u boljem stanju.",
     name: "Sarah J.",
     place: "New York, NY",
   },
   {
     quote:
-      "Excellent care and professional staff. They explained everything clearly and made my visit stress-free.",
+      "Izuzetna nega i profesionalno osoblje. Sve su mi jasno objasnili i poseta je prošla bez stresa.",
     name: "Michael R.",
     place: "Boston, MA",
   },
   {
     quote:
-      "I love my new smile! The cosmetic work was simple, careful, and completely painless.",
+      "Obožavam svoj novi osmeh! Estetski rad je bio jednostavan, pažljiv i potpuno bezbolan.",
     name: "Jessica L.",
     place: "Manhattan, NY",
   },
+];
+
+const quickLinks = [
+  { href: "#home", label: "Početna" },
+  { href: "#about", label: "O nama" },
+  { href: "#services", label: "Usluge" },
+  { href: "#reviews", label: "Utisci" },
+  { href: "#contact", label: "Kontakt" },
 ];
 
 export default function Home() {
@@ -133,28 +141,28 @@ export default function Home() {
           <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 pt-10 pb-8 md:px-8 md:pt-16 md:pb-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14">
             <div>
               <p className="animate-fade-up text-xs font-semibold tracking-[0.22em] text-teal uppercase">
-                Welcome to Bright Smiles
+                Dobrodošli u Bright Smiles
               </p>
               <h1 className="animate-fade-up delay-1 mt-4 max-w-xl font-display text-[2.35rem] leading-[1.08] font-semibold text-navy md:text-5xl lg:text-[3.35rem]">
-                Exceptional Dental Care for the Whole Family
+                Zdrav i blistav osmeh počinje brigom koja vam pruža sigurnost.
               </h1>
               <p className="animate-fade-up delay-2 mt-5 max-w-lg text-base leading-relaxed text-muted md:text-[1.05rem]">
-                We combine advanced technology with gentle, patient-centered care
-                to give you the healthier, brighter smile you deserve.
+                Uz savremenu stomatologiju i pažljiv pristup, pomažemo vam da se
+                osećate prijatno, sigurno i zadovoljno svojim osmehom.
               </p>
               <div className="animate-fade-up delay-3 mt-8 flex flex-col gap-3 sm:flex-row">
                 <a
                   href="#contact"
                   className="inline-flex items-center justify-center gap-2 rounded-md bg-teal px-5 py-3.5 text-sm font-semibold text-white transition hover:bg-teal-dark"
                 >
-                  Book appointment
+                  Zakažite pregled
                   <ArrowIcon className="size-4" />
                 </a>
                 <a
                   href="#services"
                   className="inline-flex items-center justify-center gap-2 rounded-md border border-line bg-surface px-5 py-3.5 text-sm font-semibold text-navy transition hover:border-teal/40 hover:text-teal"
                 >
-                  Explore services
+                  Pogledajte usluge
                   <ArrowIcon className="size-4" />
                 </a>
               </div>
@@ -164,7 +172,7 @@ export default function Home() {
               <div className="hero-media overflow-hidden rounded-[1.4rem] shadow-[0_24px_60px_rgba(6,37,58,0.16)] md:rounded-[1.75rem]">
                 <Image
                   src="/images/hero.jpg"
-                  alt="Patient smiling during a gentle dental checkup"
+                  alt="Pacijent se smeši tokom nežnog stomatološkog pregleda"
                   width={1600}
                   height={1200}
                   priority
@@ -174,8 +182,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="border-y border-line/80 bg-surface/80 backdrop-blur-sm">
-            <div className="mx-auto grid max-w-6xl grid-cols-2 gap-px bg-line/60 md:grid-cols-4">
+          <div className="bg-surface/80 backdrop-blur-sm">
+            <div className="mx-auto grid max-w-6xl grid-cols-2 md:grid-cols-4">
               {heroFeatures.map((item, index) => {
                 const Icon = item.icon;
                 return (
@@ -186,7 +194,7 @@ export default function Home() {
                     <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-ice text-teal">
                       <Icon className="size-5" />
                     </span>
-                    <p className="text-sm font-medium text-navy">{item.title}</p>
+                    <p className="text-sm font-medium text-muted">{item.title}</p>
                   </div>
                 );
               })}
@@ -201,15 +209,16 @@ export default function Home() {
               <div className="grid gap-4 md:grid-cols-[0.9fr_1.1fr] md:items-end md:gap-10">
                 <div>
                   <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
-                    Our services
+                    Naše usluge
                   </p>
                   <h2 className="mt-3 max-w-md font-display text-3xl leading-tight font-semibold text-navy md:text-4xl">
-                    Comprehensive care for a healthy smile.
+                    Sveobuhvatna nega za zdrav osmeh.
                   </h2>
                 </div>
                 <p className="max-w-xl text-muted md:justify-self-end md:text-right">
-                  From preventive visits to restorative and cosmetic treatments,
-                  Bright Smiles offers complete family dentistry under one roof.
+                  Od preventivnih pregleda do restaurativnih i estetskih tretmana,
+                  Bright Smiles nudi kompletnu porodičnu stomatologiju na jednom
+                  mestu.
                 </p>
               </div>
             </Reveal>
@@ -233,7 +242,7 @@ export default function Home() {
                         href="#contact"
                         className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-teal transition group-hover:gap-2.5"
                       >
-                        Learn more
+                        Saznajte više
                         <ArrowIcon className="size-4" />
                       </a>
                     </article>
@@ -251,7 +260,7 @@ export default function Home() {
               <div className="overflow-hidden rounded-3xl shadow-[0_20px_50px_rgba(6,37,58,0.12)]">
                 <Image
                   src="/images/team.jpg"
-                  alt="Bright Smiles dental team smiling in the clinic"
+                  alt="Stomatološki tim Bright Smiles u ordinaciji"
                   width={1400}
                   height={936}
                   className="aspect-5/4 w-full object-cover"
@@ -262,19 +271,19 @@ export default function Home() {
             <Reveal delay={120}>
               <div>
                 <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
-                  About us
+                  O nama
                 </p>
                 <h2 className="mt-3 font-display text-3xl leading-tight font-semibold text-navy md:text-4xl">
-                  Your smile is our top priority.
+                  Vaš osmeh nam je na prvom mestu.
                 </h2>
                 <p className="mt-5 text-muted leading-relaxed">
-                  At Bright Smiles Dental Care, we provide personalized,
-                  high-quality treatment in a calm, friendly environment —
-                  designed for every member of your family.
+                  U Bright Smiles Dental Care pružamo personalizovanu,
+                  kvalitetnu negu u mirnom i prijateljskom okruženju —
+                  namenjenu svakom članu vaše porodice.
                 </p>
                 <ul className="mt-7 space-y-3.5">
                   {aboutPoints.map((point) => (
-                    <li key={point} className="flex items-start gap-3 text-sm text-navy">
+                    <li key={point} className="flex items-start gap-3 text-sm text-muted">
                       <CheckIcon className="mt-0.5 size-5 shrink-0 text-teal" />
                       <span>{point}</span>
                     </li>
@@ -284,7 +293,7 @@ export default function Home() {
                   href="#contact"
                   className="mt-8 inline-flex items-center gap-2 rounded-md border border-teal/30 bg-surface px-5 py-3 text-sm font-semibold text-teal transition hover:border-teal hover:bg-teal hover:text-white"
                 >
-                  More about us
+                  Više o nama
                   <ArrowIcon className="size-4" />
                 </a>
               </div>
@@ -297,10 +306,10 @@ export default function Home() {
           <div className="mx-auto max-w-6xl px-5 md:px-8">
             <Reveal>
               <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
-                Why choose us
+                Zašto baš mi
               </p>
               <h2 className="mt-3 max-w-xl font-display text-3xl leading-tight font-semibold text-navy md:text-4xl">
-                Thoughtful care. Every step of the way.
+                Pažljiva nega. U svakom koraku.
               </h2>
             </Reveal>
 
@@ -332,10 +341,10 @@ export default function Home() {
           <div className="mx-auto max-w-6xl px-5 md:px-8">
             <Reveal>
               <p className="text-xs font-semibold tracking-[0.2em] text-teal uppercase">
-                Happy clients
+                Zadovoljni pacijenti
               </p>
               <h2 className="mt-3 max-w-xl font-display text-3xl leading-tight font-semibold text-navy md:text-4xl">
-                Trusted by hundreds of happy smiles.
+                Poverenje stotina srećnih osmeha.
               </h2>
             </Reveal>
 
@@ -343,7 +352,7 @@ export default function Home() {
               {testimonials.map((item, index) => (
                 <Reveal key={item.name} delay={index * 90}>
                   <figure className="flex h-full flex-col rounded-2xl bg-ice-soft p-6 md:p-7">
-                    <div className="flex gap-1 text-star" aria-label="5 star rating">
+                    <div className="flex gap-1 text-star" aria-label="Ocena 5 zvezdica">
                       {Array.from({ length: 5 }).map((_, star) => (
                         <StarIcon key={star} className="size-4" />
                       ))}
@@ -368,17 +377,17 @@ export default function Home() {
             <Reveal>
               <div className="max-w-xl">
                 <h2 className="font-display text-3xl leading-tight font-semibold text-white md:text-4xl">
-                  Ready for a healthier smile?
+                  Spremni za zdraviji osmeh?
                 </h2>
                 <p className="mt-3 text-white/85">
-                  Book a visit today and take the next step toward lasting oral
-                  health with Bright Smiles.
+                  Zakažite posetu već danas i napravite sledeći korak ka
+                  dugotrajnom oralnom zdravlju uz Bright Smiles.
                 </p>
                 <a
                   href="tel:+11234567890"
                   className="mt-7 inline-flex items-center gap-2 rounded-md bg-surface px-5 py-3.5 text-sm font-semibold text-teal transition hover:bg-ice"
                 >
-                  Book appointment
+                  Zakažite pregled
                   <ArrowIcon className="size-4" />
                 </a>
               </div>
@@ -422,25 +431,25 @@ export default function Home() {
                   Bright Smiles
                 </p>
                 <p className="text-[10px] tracking-[0.2em] text-white/65 uppercase">
-                  Dental Care
+                  Stomatološka nega
                 </p>
               </div>
             </div>
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-white/70">
-              High-quality dental care for the whole family in a comfortable,
-              friendly environment.
+              Kvalitetna stomatološka nega za celu porodicu, u udobnom i
+              prijateljskom okruženju.
             </p>
           </div>
 
           <div>
             <h3 className="text-sm font-semibold tracking-wide text-white">
-              Quick links
+              Brzi linkovi
             </h3>
             <ul className="mt-4 space-y-2.5 text-sm text-white/70">
-              {["Home", "About us", "Services", "Reviews", "Contact"].map((label) => (
-                <li key={label}>
-                  <a href={`#${label === "Home" ? "home" : label === "About us" ? "about" : label === "Reviews" ? "reviews" : label.toLowerCase()}`} className="transition hover:text-white">
-                    {label}
+              {quickLinks.map((link) => (
+                <li key={link.href}>
+                  <a href={link.href} className="transition hover:text-white">
+                    {link.label}
                   </a>
                 </li>
               ))}
@@ -449,7 +458,7 @@ export default function Home() {
 
           <div>
             <h3 className="text-sm font-semibold tracking-wide text-white">
-              Our services
+              Naše usluge
             </h3>
             <ul className="mt-4 space-y-2.5 text-sm text-white/70">
               {services.map((service) => (
@@ -464,7 +473,7 @@ export default function Home() {
 
           <div>
             <h3 className="text-sm font-semibold tracking-wide text-white">
-              Contact us
+              Kontakt
             </h3>
             <ul className="mt-4 space-y-3 text-sm text-white/70">
               <li className="flex gap-3">
@@ -481,7 +490,7 @@ export default function Home() {
               </li>
               <li className="flex gap-3">
                 <ClockIcon className="mt-0.5 size-4 shrink-0" />
-                Mon–Fri 8AM–5PM · Sat 9AM–2PM
+                Pon–Pet 8–17h · Sub 9–14h
               </li>
             </ul>
           </div>
@@ -489,13 +498,13 @@ export default function Home() {
 
         <div className="border-t border-white/10">
           <div className="mx-auto flex max-w-6xl flex-col gap-3 px-5 py-5 text-xs text-white/55 md:flex-row md:items-center md:justify-between md:px-8">
-            <p>© 2026 Bright Smiles Dental Care. All rights reserved.</p>
+            <p>© 2026 Bright Smiles Dental Care. Sva prava zadržana.</p>
             <div className="flex gap-5">
               <a href="#contact" className="transition hover:text-white">
-                Privacy Policy
+                Politika privatnosti
               </a>
               <a href="#contact" className="transition hover:text-white">
-                Terms of Service
+                Uslovi korišćenja
               </a>
             </div>
           </div>

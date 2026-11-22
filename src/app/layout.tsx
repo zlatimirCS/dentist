@@ -17,13 +17,13 @@ const fraunces = Fraunces({
 export const metadata: Metadata = {
   title: "Bright Smiles Dental Care",
   description:
-    "Exceptional dental care for the whole family — gentle treatment, modern technology, and trusted professionals.",
+    "Izuzetna stomatološka nega za celu porodicu — nežan pristup, moderna tehnologija i pouzdani stručnjaci.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
-      lang="en"
+      lang="sr-Latn"
       className={`${manrope.variable} ${fraunces.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
