@@ -129,10 +129,6 @@ p {
     linear-gradient(180deg, #eaf3f7 0%, #f7fafc 55%, #ffffff 100%);
 }
 
-.hero-media {
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 8% 100%, 0 88%);
-}
-
 .reveal {
   opacity: 0;
   transform: translateY(20px);
